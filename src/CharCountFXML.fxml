@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="573.0" prefWidth="968.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CharCountController">
+   <children>
+      <BarChart fx:id="bc_LetterFrequencyChart" categoryGap="5.0" prefHeight="573.0" prefWidth="968.0" title="Letter Frequency Count">
+        <xAxis>
+          <CategoryAxis fx:id="bc_xAxis" prefHeight="36.0" prefWidth="890.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="bc_yAxs" label="# Occurances" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="bt_OK" layoutX="883.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="71.0" text="OK" />
+      <Hyperlink fx:id="hl_WhatIsThis" layoutX="14.0" layoutY="548.0" onAction="#handleHyperLinkAction" text="What is this?" />
+   </children>
+</AnchorPane>
