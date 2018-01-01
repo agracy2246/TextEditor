@@ -28,7 +28,7 @@ public class Driver extends Application {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.setTitle("myPad");
-        stage.getIcons().add(new Image("/Untitled.png"));
+        stage.getIcons().add(new Image("/TitleBarIcon.png"));
         stage.setTitle(TITLE + "Untitled.txt");
         
         stage.show();
